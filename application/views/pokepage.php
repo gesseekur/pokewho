@@ -68,7 +68,7 @@
 			<ul id="nav-mobile" class="left">
 				<li class="welcome">Welcome <?= $this->session->userdata('currentUser')['name']?></li>
 			</ul>
-			<a href="#" class="brand-logo center">PokeIt</a>
+			<a href="#" class="brand-logo center">PokeWho?</a>
 			<ul id="nav-mobile" class="right">
 				<li><a class="logout" href="/sessions/logout">Logout</a></li>
 			</ul>
