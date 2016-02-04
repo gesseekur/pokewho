@@ -16,17 +16,22 @@
 <style>
 	body{
 		background-color:#f5f5f5;
+		background-image:url("assets/img/europe.jpg");
+    	height:1000px;
 	}
+
 
 	.info {
 		border:1px solid black;
 		display: inline-block;
 		margin-left:15%;
+		margin-top:5%;
 		background-color:white;
 	}
 	
 	.welcome {
 		font-family:'Indie Flower', Arial;
+		font-size:140%;
 	}
 
 	.pokeTable {
@@ -60,6 +65,9 @@
 
 	<nav>
 		<div class="nav-wrapper cyan darken-4">
+			<ul id="nav-mobile" class="left">
+				<li class="welcome">Welcome <?= $this->session->userdata('currentUser')['name']?></li>
+			</ul>
 			<a href="#" class="brand-logo center">PokeIt</a>
 			<ul id="nav-mobile" class="right">
 				<li><a class="logout" href="/sessions/logout">Logout</a></li>
@@ -67,7 +75,7 @@
 		</div>
 	</nav>
         
-	<h3 class="center welcome"> Welcome <?= $this->session->userdata('currentUser')['name']?></h3>
+	
 
 <div class="info container center">
 	<p><strong><?=$pokeCount?></strong> people poked you!</p>
